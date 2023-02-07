@@ -76,6 +76,19 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
+<!--            https://www.baeldung.com/spring-boot-repackage-vs-mvn-package-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.5.6</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <!--  解决 mvn clean test  Tests run: 0, Failures: 0, Errors: 0, Skipped: 0-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
